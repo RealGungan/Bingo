@@ -101,6 +101,9 @@ while ($x <= 60) {
     }
 }
 print_r($arrayBolas);
+    
+$bola=array_pop($arrayBolas);
+echo "Ha salido la bola :" .$bola;
 }
     ?>
 </BODY>
