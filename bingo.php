@@ -7,11 +7,12 @@
         table,
         tr,
         td {
-            border: 1px solid;
+             border: 1px solid;
             border-collapse: collapse;
-            font-size: 3rem;
+            font-size: 1.5rem;
             padding: 1rem;
-
+            width: 100px;
+            height: 50px;
             text-align: center;
         }
 
@@ -27,13 +28,7 @@
     <?php
     printf("<div>");
     createCarton();
-    printf("</div>");
-
-    printf("<div>");
     createCarton();
-    printf("</div>");
-
-    printf("<div>");
     createCarton();
     printf("</div>");
 
