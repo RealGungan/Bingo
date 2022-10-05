@@ -83,6 +83,25 @@
 
         return $arr_2d;
     }
+    //FUNCION GENERAR BOLAS-------------------------------------------------------------------------
+
+
+function generarBolas(){
+$arrayBolas = array();
+$valorRandomPrimero = mt_rand(0,60);
+array_push($arrayBolas, $valorRandomPrimero);
+$x = 1;
+while ($x <= 60) {
+    $siguienteValorRadom = mt_rand(0, 60);
+    if(in_array($siguienteValorRadom, $arrayBolas)){
+        continue;
+    }else{
+    array_push($arrayBolas, $siguienteValorRadom);
+    $x++;
+    }
+}
+print_r($arrayBolas);
+}
     ?>
 </BODY>
 
